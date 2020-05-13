@@ -1,0 +1,14 @@
+<ul class="nav nav-tabs">
+  {% if url_for(request.endpoint) == "/currentprojects/" %}
+  <li class="active">
+  {% else %}
+  <li>
+  {% endif %}
+  <a href="/currentprojects/">Current Projects</a></li>
+  {% if url_for(request.endpoint) == "/pastprojects/" %}
+  <li class="active">
+  {% else %}
+  <li>
+  {% endif %}
+  <a href="/pastprojects/">Past Projects</a></li>
+</ul>

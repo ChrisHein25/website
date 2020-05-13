@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block left_content %}
+{% endblock %}
+
+{% block center_content %}
+{% include "_projects_tab.html" %}
+
+<div class="col-sm-12 about_projects">
+  <h2 class="about-header">Projects</h2>
+  <p>This page links to current projects.</p>
+</div>
+
+<!-- Project Block (should be able to consolidate this using Jinja2)-->
+<div class="col-sm-12">
+  <h3><u>Example Project</u></h3>
+</div>
+<div class="col-sm-12 proj_container">
+  <div class="col-sm-2 proj_img"></div>
+  <div class="col-sm-10 proj_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ex euismod, tempor diam sed, aliquam enim. Donec pharetra auctor urna id bibendum. Maecenas blandit sed nulla nec sodales. Praesent vitae turpis nec eros rutrum varius et eget erat. Pellentesque ultrices vel felis sit amet varius. Mauris iaculis lorem at magna sagittis lacinia sit amet vitae ligula. Vestibulum eleifend ligula ipsum, at sagittis mauris placerat et. Mauris consectetur at libero et cursus. Morbi ac arcu rutrum, ornare odio id, consectetur ligula. Sed eget dolor libero. Aenean at dolor nec ante hendrerit venenatis eget eget nulla. Duis non velit a leo facilisis pharetra quis quis arcu. Cras condimentum tincidunt purus vitae fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus bibendum odio a luctus. Cras semper, urna vitae dignissim aliquet, justo purus auctor purus, a tempor risus mi eget libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ex euismod, tempor diam sed, aliquam enim. Donec pharetra auctor urna id bibendum. Maecenas blandit sed nulla nec sodales. Praesent vitae turpis nec eros rutrum varius et eget erat. Pellentesque ultrices vel felis sit amet varius. Mauris iaculis lorem at magna sagittis lacinia sit amet vitae ligula. Vestibulum eleifend ligula ipsum, at sagittis mauris placerat et.</div>
+</div>
+<div class="col-sm-12" style="padding-bottom:10px">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-10"><p>Links: <a href="/">Home</a> | <a href="/contact/">Contact</a></p></div>
+</div>
+<div class="col-sm-12">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-10">
+    <p>Progress:</p>
+    <div class="progress">
+      <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+      aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+        85% Complete
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End -->
+
+
+{% endblock %}
+
+{% block right_content %}
+{% endblock %}

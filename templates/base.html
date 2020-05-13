@@ -1,0 +1,50 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block head %}
+  {{ ckeditor.load() }} <!-- disables bootstrap so we need super() -->
+  {{ super() }}
+  <style>
+  {% include "/style.css" %}
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+{% endblock head %}
+
+
+{% block title %}
+Chris Hein | {{title}}
+{% endblock title %}
+
+
+{% block navbar %}
+  {% include "_navbar.html" %}
+{% endblock navbar %}
+
+{% block content %}
+<div class="container-fluid text-center top_bar_div bg-dark" style="padding: 0px">
+
+</div>
+  {% include "_messages.html" %}
+
+  <div class="container-fluid text-center main_container">
+    <div class="col-sm-12 row content">
+        <div class="col-sm-2 sidenav">
+          {% block left_content %}
+          {% endblock left_content %}
+        </div>
+        <div class="col-sm-8 text-left center_content">
+          {% block center_content %}
+          {% endblock center_content %}
+        </div>
+        <div class="col-sm-2 sidenav">
+          {% block right_content %}
+          {% endblock right_content %}
+        </div>
+    </div>
+  </div>
+
+  <footer class="bottom_footer text-center">
+    Chris Hein, 05/2020
+  </footer>
+{% endblock content %}

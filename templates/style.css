@@ -1,0 +1,110 @@
+/* ADD ALL CUSTOM CSS HERE */
+
+/********* Page-wide edits ***********/
+
+html, body {
+  height:100%;
+}
+
+.bg-dark{background-color:#080808;}
+
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-width: 0;
+  border-radius: 0;
+  border-color: #222;
+  /*letter-spacing: 1px;*/
+}
+
+.navbar-brand {
+    color: white !important;
+  }
+
+
+.main_container {
+  background-image: url("/static/Media/gears2.jpg");
+  background-size: 100%;
+  height: auto;
+}
+
+.center_content {
+  height: 100%;
+  padding: 15px;
+  background-color: white;
+  overflow:auto;
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  height: 100%;
+}
+
+
+/* Set black background color, white text and some padding */
+.bottom_footer {
+  background-color: #222;
+  color: white;
+  padding: 10px;
+}
+
+/********* Home Page ***********/
+
+.intro_div {
+  height: 150px;
+}
+
+.intro_div_text {
+  background-image: url("/static/Media/grey.png");
+  color: inherit;
+}
+
+.intro_div_image {
+  background-image: url("/static/Media/head.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+/********* Project Pages ***********/
+
+.proj_container {
+  display: flex; /* equal height of the children */
+  min-height: 200px;
+  padding-bottom: 20px;
+}
+
+.proj_text, .proj_img {
+
+}
+
+.proj_text {
+  font-weight: 400;
+}
+
+.proj_img {
+  background-image: url("/static/Media/Projects/Rocket_Team/Rover/roverCad.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /*background-color: blue;*/
+}
+
+
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  html, body {
+    font-size: 18px;
+  }
+  .sidenav {
+    height: auto;
+    padding: 10px;
+  }
+
+  .row.content {height:auto;}
+
+}
