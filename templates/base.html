@@ -1,7 +1,6 @@
 {% extends 'bootstrap/base.html' %}
 
 {% block head %}
-  {{ ckeditor.load() }} <!-- disables bootstrap so we need super() -->
   {{ super() }}
   <style>
   {% include "/style.css" %}

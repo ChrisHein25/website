@@ -4,11 +4,9 @@
 
 from flask import Flask, render_template, flash, request, redirect
 from flask_bootstrap import Bootstrap
-from flask_ckeditor import CKEditor
 
 app = Flask(__name__)
 Bootstrap(app)
-CKEditor(app)
 
 # Home page
 @app.route('/')
