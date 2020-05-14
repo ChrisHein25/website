@@ -53,11 +53,4 @@ def page_not_found(e):
 if __name__ == '__main__':
     app.run(debug=True) # use ssl_context='adhoc' for quick https)
 
-# added using git desktop app -- should show up on google
-# new comment just now
-
-# newer comment
-
-# newest comment
-
-# newest # newest comment
+# deleted some comments
