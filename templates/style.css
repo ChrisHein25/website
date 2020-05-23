@@ -45,7 +45,7 @@ html, body {
 /* Set black background color, white text and some padding */
 .bottom_footer {
   background-color: #222;
-  color: white;
+  color: lightgrey;
   padding: 10px;
 }
 

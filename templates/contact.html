@@ -1,13 +1,45 @@
 {% extends 'base.html' %}
 
 {% block left_content %}
-<h1>Left {{ title }}</h1>
 {% endblock %}
 
 {% block center_content %}
-<h1>Middle {{ title }}</h1>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="col-sm-12" style="height: 500px">
+
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <h3 class="text-center">Contact</h3>
+      <p>Feel free to reach out.</p>
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn-primary pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4">
+      <h5><span class="glyphicon glyphicon-map-marker"></span> Greenville, SC</h5>
+      <h5><span class="glyphicon glyphicon-envelope"></span> chris.hein@comcast.net</h5>
+    </div>
+    <div class="col-sm-4"></div>
+  </div>
+
+  </div>
 {% endblock %}
 
 {% block right_content %}
-<h1>Right {{ title }}</h1>
 {% endblock %}
